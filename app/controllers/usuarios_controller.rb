@@ -1,5 +1,5 @@
 class UsuariosController < ApplicationController
-
+  before_action :authenticate_user!
   def inicio
   end
 
